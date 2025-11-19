@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KeepAll - A minimalist note-taking app with clean design and intuitive organization.">
+    <meta name="keywords" content="KeepAll, notes app, productivity, minimalist design, note-taking">
+    <meta name="author" content="Tom Rynn">
+    <title>KeepAll - Minimalist Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="keepall.html" class="nav-link active">KeepAll</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="keepall-hero">
+            <div class="container">
+                <div class="keepall-hero-content">
+                    <div class="keepall-hero-text">
+                        <h1 class="keepall-title">KeepAll</h1>
+                        <p class="keepall-subtitle">Minimalist note-taking with the elegance of paper and the power of digital organization.</p>
+                        <div class="keepall-features-preview">
+                            <span class="feature-tag">Clean Design</span>
+                            <span class="feature-tag">Intuitive Organization</span>
+                            <span class="feature-tag">Smooth Animations</span>
+                        </div>
+                        <div class="keepall-cta">
+                            <button onclick="showNotification('KeepAll is in development. Sign up for early access!', 'info')" class="btn btn-primary">Get Early Access</button>
+                            <a href="#features" class="btn btn-secondary">Explore Features</a>
+                        </div>
+                    </div>
+                    <div class="keepall-hero-image">
+                        <div class="app-mockup">
+                            <div class="mockup-header">
+                                <div class="mockup-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="mockup-title">KeepAll</div>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="note-card active">
+                                    <h4>Meeting Notes</h4>
+                                    <p>Discuss project timeline and deliverables...</p>
+                                    <span class="note-date">Today, 2:30 PM</span>
+                                </div>
+                                <div class="note-card">
+                                    <h4>Ideas</h4>
+                                    <p>New feature concepts for the app...</p>
+                                    <span class="note-date">Yesterday</span>
+                                </div>
+                                <div class="note-card">
+                                    <h4>Shopping List</h4>
+                                    <p>Milk, bread, coffee beans, notebooks...</p>
+                                    <span class="note-date">2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="keepall-features">
+            <div class="container">
+                <h2 class="section-title">Designed for Clarity</h2>
+                <p class="section-subtitle">Every element crafted to feel like writing on beautiful paper, with the convenience of digital organization.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Clean Interface</h3>
+                        <p>Distraction-free writing environment with thoughtful typography and spacing that feels like premium paper.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🏷️</div>
+                        <h3>Smart Organization</h3>
+                        <p>Intuitive categorization with color-coded tags and collapsible sections for effortless note management.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Smooth Animations</h3>
+                        <p>Paper-like transitions and gentle fade-ins that make every interaction feel natural and satisfying.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3>AI-Powered Search</h3>
+                        <p>Intelligent search with suggestions that understands context and helps you find notes instantly.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🌙</div>
+                        <h3>Light & Dark Modes</h3>
+                        <p>Seamlessly switch between light paper theme and dark nighttime mode for comfortable writing anytime.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instant Sync</h3>
+                        <p>Your notes sync across all devices in real-time, so your thoughts are always within reach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Philosophy -->
+        <section class="design-philosophy">
+            <div class="container">
+                <div class="philosophy-content">
+                    <div class="philosophy-text">
+                        <h2>Design Philosophy</h2>
+                        <p>KeepAll embraces the philosophy that great note-taking should feel as natural as writing on paper, but with the power and convenience of digital organization.</p>
+                        <p>The app draws inspiration from the tactile experience of quality notebooks, the aesthetic principles of Wes Anderson's visual storytelling, and the intuitive simplicity of classic iOS design.</p>
+                        <p>Every animation, every transition, and every interaction is crafted to feel purposeful and delightful, creating an environment where your thoughts can flow freely without digital friction.</p>
+                    </div>
+                    <div class="philosophy-visual">
+                        <div class="color-palette">
+                            <div class="color-swatch" style="background: #f5f1e8;">Manilla</div>
+                            <div class="color-swatch" style="background: #3c2415;">Espresso</div>
+                            <div class="color-swatch" style="background: #d4b896;">Latte</div>
+                            <div class="color-swatch" style="background: #f9f6f0;">Cream</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Status -->
+        <section class="development-status">
+            <div class="container">
+                <h2 class="section-title">Development Progress</h2>
+                <div class="progress-grid">
+                    <div class="progress-item completed">
+                        <div class="progress-icon">✅</div>
+                        <h3>Core Design System</h3>
+                        <p>Typography, colors, and visual language established</p>
+                    </div>
+                    <div class="progress-item completed">
+                        <div class="progress-icon">✅</div>
+                        <h3>Note Creation & Editing</h3>
+                        <p>Rich text editing with formatting options</p>
+                    </div>
+                    <div class="progress-item in-progress">
+                        <div class="progress-icon">🔄</div>
+                        <h3>Organization System</h3>
+                        <p>Tags, categories, and search functionality</p>
+                    </div>
+                    <div class="progress-item upcoming">
+                        <div class="progress-icon">⏳</div>
+                        <h3>Sync & Backup</h3>
+                        <p>Cloud synchronization across devices</p>
+                    </div>
+                    <div class="progress-item upcoming">
+                        <div class="progress-icon">⏳</div>
+                        <h3>Advanced Features</h3>
+                        <p>AI suggestions, templates, and integrations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="keepall-cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Organize Your Thoughts?</h2>
+                    <p>Join the waitlist for early access and be the first to experience KeepAll when it launches.</p>
+                    <div class="cta-form">
+                        <input type="email" placeholder="Enter your email address" class="email-input">
+                        <button onclick="showNotification('Thank you! You\'ve been added to the waitlist.', 'success')" class="btn btn-primary">Join Waitlist</button>
+                    </div>
+                    <p class="cta-note">No spam, just updates on KeepAll's development and launch.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tom Rynn. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/tomrynn" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/tomrynn" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <style>
+        /* KeepAll Specific Styles */
+        .keepall-hero {
+            padding: 140px 0 100px;
+            background: linear-gradient(135deg, var(--manilla-light) 0%, var(--cream) 100%);
+            position: relative;
+        }
+
+        .keepall-hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .keepall-title {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            font-weight: 600;
+            color: var(--espresso);
+            margin-bottom: 1rem;
+            letter-spacing: -2px;
+        }
+
+        .keepall-subtitle {
+            font-size: 1.5rem;
+            color: var(--espresso-dark);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .feature-tag {
+            display: inline-block;
+            background: var(--latte-light);
+            color: var(--espresso);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .keepall-features {
+            padding: 100px 0;
+            background: var(--cream);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--cream-light);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+            transition: var(--transition-paper);
+            border: 1px solid var(--latte-light);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--espresso);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: var(--espresso-dark);
+            line-height: 1.7;
+        }
+
+        .design-philosophy {
+            padding: 100px 0;
+            background: var(--manilla-light);
+        }
+
+        .philosophy-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .philosophy-text h2 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--espresso);
+            margin-bottom: 2rem;
+        }
+
+        .philosophy-text p {
+            color: var(--espresso-dark);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .color-palette {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .color-swatch {
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--espresso);
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--latte-light);
+        }
+
+        .development-status {
+            padding: 100px 0;
+            background: var(--cream);
+        }
+
+        .progress-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .progress-item {
+            background: var(--cream-light);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+            border: 1px solid var(--latte-light);
+        }
+
+        .progress-item.completed {
+            border-left: 4px solid #059669;
+        }
+
+        .progress-item.in-progress {
+            border-left: 4px solid #d97706;
+        }
+
+        .progress-item.upcoming {
+            border-left: 4px solid var(--neutral-warm);
+        }
+
+        .progress-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .progress-item h3 {
+            font-family: var(--font-serif);
+            color: var(--espresso);
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-item p {
+            color: var(--espresso-dark);
+            font-size: 0.9rem;
+        }
+
+        .keepall-cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--latte-light) 0%, var(--cream) 100%);
+        }
+
+        .cta-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--espresso);
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            color: var(--espresso-dark);
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .cta-form {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .email-input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 2px solid var(--latte);
+            border-radius: 8px;
+            background: var(--cream);
+            color: var(--espresso);
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .email-input:focus {
+            outline: none;
+            border-color: var(--espresso);
+        }
+
+        .cta-note {
+            color: var(--espresso-dark);
+            font-size: 0.875rem;
+        }
+
+        /* App Mockup */
+        .app-mockup {
+            background: var(--cream);
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+            overflow: hidden;
+            border: 1px solid var(--latte-light);
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .mockup-header {
+            background: var(--latte-light);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mockup-dots {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .mockup-dots span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--espresso);
+            opacity: 0.3;
+        }
+
+        .mockup-title {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            color: var(--espresso);
+        }
+
+        .mockup-content {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .note-card {
+            background: var(--cream-light);
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid var(--latte-light);
+            transition: var(--transition-smooth);
+        }
+
+        .note-card.active {
+            border-color: var(--latte-dark);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .note-card h4 {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            color: var(--espresso);
+            margin-bottom: 0.5rem;
+        }
+
+        .note-card p {
+            color: var(--espresso-dark);
+            font-size: 0.875rem;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .note-date {
+            font-size: 0.75rem;
+            color: var(--neutral-warm);
+        }
+
+        @media (max-width: 768px) {
+            .keepall-hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .philosophy-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-form {
+                flex-direction: column;
+            }
+            
+            .keepall-title {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</body>
+</html>

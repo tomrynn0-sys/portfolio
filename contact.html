@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch for project collaborations, automation solutions, or custom development work.">
+    <meta name="keywords" content="contact, hire developer, automation solutions, web development, collaboration">
+    <meta name="author" content="Your Name">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-subtitle">Ready to start your next project? Let's discuss how we can work together.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 style="margin-bottom: 2rem;">Let's Connect</h2>
+                        <p style="font-size: 1.125rem; color: #666; line-height: 1.8; margin-bottom: 2rem;">
+                            I'm always interested in new opportunities and challenging projects. Whether you need 
+                            a custom web application, automation solutions, or want to collaborate on an interesting 
+                            project, I'd love to hear from you.
+                        </p>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="color: #2563eb; margin-bottom: 1rem;">What I Can Help With:</h3>
+                            <ul style="color: #666; line-height: 1.8;">
+                                <li>Custom web application development</li>
+                                <li>Python automation scripts</li>
+                                <li>Data processing and analysis tools</li>
+                                <li>API development and integration</li>
+                                <li>Performance optimization</li>
+                                <li>Technical consulting</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="color: #2563eb; margin-bottom: 1rem;">Response Time:</h3>
+                            <p style="color: #666;">
+                                I typically respond to inquiries within 24 hours during business days. 
+                                For urgent matters, please mention it in your message.
+                            </p>
+                        </div>
+                        
+                        <div style="background: #f8fafc; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2563eb;">
+                            <h4 style="color: #333; margin-bottom: 0.5rem;">Direct Email</h4>
+                            <p style="color: #666;">
+                                Prefer email? Reach me directly at <br>
+                                <a href="mailto:tomrynn0@gmail.com" style="color: #2563eb; text-decoration: none; font-weight: 600;">tomrynn0@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3 style="margin-bottom: 1.5rem; color: #333;">Send a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company (Optional)</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-type">Project Type</label>
+                                <select id="project-type" name="project-type" style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem;">
+                                    <option value="">Select project type</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="automation">Python Automation</option>
+                                    <option value="consulting">Technical Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range (Optional)</label>
+                                <select id="budget" name="budget" style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem;">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-1000">Under $1,000</option>
+                                    <option value="1000-5000">$1,000 - $5,000</option>
+                                    <option value="5000-10000">$5,000 - $10,000</option>
+                                    <option value="10000-plus">$10,000+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and any specific requirements..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alternative Contact Methods -->
+        <section class="alternative-contact" style="background: #f8fafc; padding: 80px 0;">
+            <div class="container">
+                <h2 class="section-title">Other Ways to Connect</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="text-align: center; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">💼</div>
+                        <h3 style="margin-bottom: 1rem;">LinkedIn</h3>
+                        <p style="color: #666; margin-bottom: 1rem;">Connect professionally and see my work history</p>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="btn btn-secondary">Connect on LinkedIn</a>
+                    </div>
+                    
+                    <div style="text-align: center; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🐙</div>
+                        <h3 style="margin-bottom: 1rem;">GitHub</h3>
+                        <p style="color: #666; margin-bottom: 1rem;">Check out my code and open source projects</p>
+                        <a href="https://github.com/yourusername" target="_blank" class="btn btn-secondary">View GitHub</a>
+                    </div>
+                    
+                    <div style="text-align: center; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🐦</div>
+                        <h3 style="margin-bottom: 1rem;">Twitter</h3>
+                        <p style="color: #666; margin-bottom: 1rem;">Follow for tech insights and project updates</p>
+                        <a href="https://twitter.com/yourusername" target="_blank" class="btn btn-secondary">Follow on Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tom Rynn. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/tomrynn" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/tomrynn" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <style>
+        .page-header {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            text-align: center;
+        }
+        
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .page-subtitle {
+            font-size: 1.25rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-section {
+            padding: 80px 0;
+        }
+    </style>
+</body>
+</html>

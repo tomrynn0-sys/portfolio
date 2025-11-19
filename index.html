@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio showcasing KeepAll app, web development projects, and creative coding solutions.">
+    <meta name="keywords" content="portfolio, KeepAll, notes app, web development, creative coding, Tom Rynn">
+    <meta name="author" content="Tom Rynn">
+    <title>Tom Rynn - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Tom Rynn</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="keepall.html" class="nav-link">KeepAll</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Creative Developer<br>
+                        & Digital Craftsman
+                    </h1>
+                    <p class="hero-subtitle">
+                        I build thoughtful digital experiences that blend aesthetic elegance with functional simplicity. 
+                        Currently focused on bringing the tactile feel of paper to modern note-taking with KeepAll.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="keepall.html" class="btn btn-primary">Explore KeepAll</a>
+                        <a href="projects.html" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=500&h=500&fit=crop&crop=center" alt="Creative workspace with notebook" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project: KeepAll -->
+        <section class="featured-keepall">
+            <div class="container">
+                <div class="keepall-highlight">
+                    <div class="keepall-content">
+                        <div class="keepall-badge">Featured Project</div>
+                        <h2 class="keepall-title">KeepAll</h2>
+                        <p class="keepall-description">
+                            A minimalist note-taking app that captures the elegance of paper notebooks with the power of digital organization. 
+                            Designed with Wes Anderson aesthetics and the intuitive simplicity of classic iOS Notes.
+                        </p>
+                        <div class="keepall-features">
+                            <span class="feature-item">📝 Clean paper-like interface</span>
+                            <span class="feature-item">🏷️ Smart organization</span>
+                            <span class="feature-item">✨ Smooth animations</span>
+                            <span class="feature-item">🌙 Light & dark modes</span>
+                        </div>
+                        <div class="keepall-links">
+                            <a href="keepall.html" class="btn btn-primary">Learn More</a>
+                            <button onclick="showNotification('Early access coming soon! Join the waitlist on the KeepAll page.', 'info')" class="btn btn-secondary">Get Early Access</button>
+                        </div>
+                    </div>
+                    <div class="keepall-visual">
+                        <div class="app-preview">
+                            <div class="preview-header">
+                                <span class="app-title">KeepAll</span>
+                            </div>
+                            <div class="preview-notes">
+                                <div class="preview-note active">
+                                    <h4>Design Ideas</h4>
+                                    <p>Explore paper texture overlays and vintage typography combinations...</p>
+                                    <span class="note-time">2 hours ago</span>
+                                </div>
+                                <div class="preview-note">
+                                    <h4>Meeting Notes</h4>
+                                    <p>User feedback session - prioritize search functionality...</p>
+                                    <span class="note-time">Yesterday</span>
+                                </div>
+                                <div class="preview-note">
+                                    <h4>App Features</h4>
+                                    <p>Collapsible categories, AI suggestions, export options...</p>
+                                    <span class="note-time">3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <div class="container">
+                <h2 class="section-title">Craft & Capabilities</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Creative Development</h3>
+                        <p>Building digital experiences that prioritize aesthetics and user delight, from concept to execution.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📱</div>
+                        <h3>App Development</h3>
+                        <p>Creating intuitive mobile and web applications with clean interfaces and smooth interactions.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚡</div>
+                        <h3>Performance & Polish</h3>
+                        <p>Optimizing for speed and responsiveness while maintaining visual quality and user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Projects Preview -->
+        <section class="featured-projects">
+            <div class="container">
+                <h2 class="section-title">Other Projects</h2>
+                <div class="projects-preview">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center" alt="Web application interface" class="project-img">
+                        <div class="project-content">
+                            <h3>Creative Web Apps</h3>
+                            <p>Interactive web applications with unique visual designs and smooth user experiences.</p>
+                            <a href="projects.html" class="project-link">View Projects →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400&h=300&fit=crop&crop=center" alt="Code and automation" class="project-img">
+                        <div class="project-content">
+                            <h3>Automation Tools</h3>
+                            <p>Python scripts and tools that streamline workflows and solve real-world problems.</p>
+                            <a href="projects.html" class="project-link">View Projects →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="projects.html" class="btn btn-primary">View All Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tom Rynn. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/tomrynn" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/tomrynn" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <style>
+        /* KeepAll Highlight Section */
+        .featured-keepall {
+            padding: 100px 0;
+            background: var(--manilla-light);
+        }
+
+        .keepall-highlight {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            background: var(--cream);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--latte-light);
+        }
+
+        .keepall-badge {
+            display: inline-block;
+            background: var(--latte);
+            color: var(--espresso);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .keepall-content h2 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            color: var(--espresso);
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .keepall-description {
+            font-size: 1.25rem;
+            color: var(--espresso-dark);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .keepall-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-item {
+            display: inline-block;
+            font-size: 0.95rem;
+            color: var(--espresso-dark);
+            padding: 0.5rem 0;
+        }
+
+        .keepall-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .app-preview {
+            background: var(--cream-light);
+            border-radius: 16px;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--latte-light);
+            overflow: hidden;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .preview-header {
+            background: var(--latte-light);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--latte);
+        }
+
+        .app-title {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--espresso);
+        }
+
+        .preview-notes {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .preview-note {
+            background: var(--manilla-light);
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid var(--latte-light);
+            transition: var(--transition-smooth);
+        }
+
+        .preview-note.active {
+            border-color: var(--latte-dark);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .preview-note h4 {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            color: var(--espresso);
+            margin-bottom: 0.5rem;
+        }
+
+        .preview-note p {
+            color: var(--espresso-dark);
+            font-size: 0.875rem;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .note-time {
+            font-size: 0.75rem;
+            color: var(--neutral-warm);
+        }
+
+        @media (max-width: 768px) {
+            .keepall-highlight {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+            
+            .keepall-content h2 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</body>
+</html>

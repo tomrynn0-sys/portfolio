@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my coding projects including web applications, automation scripts, and development tools.">
+    <meta name="keywords" content="projects, web development, python, automation, github, portfolio">
+    <meta name="author" content="Your Name">
+    <title>Projects - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li class="nav-item"><a href="keepall.html" class="nav-link">KeepAll</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">My Projects</h1>
+                <p class="page-subtitle">A collection of web applications, automation tools, and development projects I've built.</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center" alt="E-Commerce Platform" class="project-img">
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack e-commerce solution with user authentication, product management, shopping cart, and payment integration using Stripe.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">MongoDB</span>
+                                <span class="project-tag">Stripe</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/ecommerce-platform" target="_blank" class="btn btn-secondary">GitHub</a>
+                                <a href="https://your-ecommerce-demo.netlify.app" target="_blank" class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400&h=300&fit=crop&crop=center" alt="Data Processing Script" class="project-img">
+                        <div class="project-content">
+                            <h3>Data Processing Automation</h3>
+                            <p>Python automation tool that processes and analyzes large datasets, generates reports, and sends automated email summaries.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Pandas</span>
+                                <span class="project-tag">SMTP</span>
+                                <span class="project-tag">Excel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/data-processor" target="_blank" class="btn btn-secondary">GitHub</a>
+                                <a href="#" onclick="showNotification('Demo not available for this backend tool', 'info')" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop&crop=center" alt="Task Management App" class="project-img">
+                        <div class="project-content">
+                            <h3>Task Management Dashboard</h3>
+                            <p>Collaborative task management application with real-time updates, team collaboration, and advanced project tracking features.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Vue.js</span>
+                                <span class="project-tag">Firebase</span>
+                                <span class="project-tag">Tailwind</span>
+                                <span class="project-tag">PWA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/task-manager" target="_blank" class="btn btn-secondary">GitHub</a>
+                                <a href="https://your-taskmanager-demo.netlify.app" target="_blank" class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1554474051-025697423853?w=400&h=300&fit=crop&crop=center" alt="Weather App" class="project-img">
+                        <div class="project-content">
+                            <h3>Weather Forecast App</h3>
+                            <p>Responsive weather application with location-based forecasts, interactive maps, and severe weather alerts.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">API</span>
+                                <span class="project-tag">Chart.js</span>
+                                <span class="project-tag">Geolocation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/weather-app" target="_blank" class="btn btn-secondary">GitHub</a>
+                                <a href="https://your-weather-demo.netlify.app" target="_blank" class="btn btn-primary">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a62d?w=400&h=300&fit=crop&crop=center" alt="Mobile App" class="project-img">
+                        <div class="project-content">
+                            <h3>Fitness Tracker Mobile App</h3>
+                            <p>Cross-platform mobile application for tracking workouts, nutrition, and health metrics with data visualization.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React Native</span>
+                                <span class="project-tag">SQLite</span>
+                                <span class="project-tag">Charts</span>
+                                <span class="project-tag">iOS/Android</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/fitness-tracker" target="_blank" class="btn btn-secondary">GitHub</a>
+                                <a href="#" onclick="showNotification('Mobile app demo available upon request', 'info')" class="btn btn-primary">Get Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79d7269810?w=400&h=300&fit=crop&crop=center" alt="API Integration" class="project-img">
+                        <div class="project-content">
+                            <h3>Social Media Scheduler</h3>
+                            <p>Automation tool that schedules and posts content across multiple social media platforms with analytics tracking.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">APIs</span>
+                                <span class="project-tag">Cron</span>
+                                <span class="project-tag">Analytics</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/social-scheduler" target="_blank" class="btn btn-secondary">GitHub</a>
+                                <a href="#" onclick="showNotification('Backend tool - documentation available', 'info')" class="btn btn-primary">View Docs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Interested in Collaborating?</h2>
+                    <p>I'm always open to new projects and opportunities. Let's discuss how we can work together.</p>
+                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tom Rynn. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/tomrynn" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/tomrynn" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <style>
+        .page-header {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            text-align: center;
+        }
+        
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .page-subtitle {
+            font-size: 1.25rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .cta-section {
+            padding: 80px 0;
+            background: #f8fafc;
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .cta-content p {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</body>
+</html>
